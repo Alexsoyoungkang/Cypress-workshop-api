@@ -1,0 +1,67 @@
+{
+  "articles": [
+    {
+      "slug": "Mastering-Knowledge-with-Self-Assessments:-Identifying-and-Bridging-Learning-Gaps-in-Education-1",
+      "title": "title 0",
+      "description": "Self-assessment is an essential tool for gauging your understanding of lecture material. It answers critical questions: Have you grasped everything correctly? Is there anything you've missed? Are you prepared for the next lesson? These assessments ensure that you build a solid foundation of knowledge, confidently and efficiently paving the way for swift progress and effective learning outcomes.",
+      "body": "Traditional educational institutions, such as colleges and universities, commonly use tests and assessments to measure knowledge. This approach is effective for gauging student performance, but it's not without drawbacks. In these settings, assessments after every lecture aren't feasible due to the time required for teachers to evaluate them. This often leads to students having a false sense of understanding, believing they've comprehended all aspects of a lecture when, in reality, small but crucial details might be missed. These 'knowledge gaps' can accumulate, making more complex topics difficult to grasp later on.\n\nAt Bondar Academy, we address this challenge by implementing self-assessments after every lecture. These are designed to cover key questions that ensure a thorough understanding of the material, essential for comfort and success in future lectures. The number of questions varies, ranging from 3-4 to 15-20, depending on the lecture's significance and the volume of critical information. With these self-assessments, students receive immediate feedback, helping them determine if they've fully understood the lecture or if they need to revisit certain parts or seek assistance from our instructors in the Slack Workspace.",
+      "tagList": [
+          "Self-Assessment",
+          "Test",
+          "Exam"
+      ],
+      "createdAt": "2024-01-27T21:48:36.340Z",
+      "updatedAt": "2024-01-27T21:48:36.340Z",
+      "favorited": false,
+      "favoritesCount": 1,
+      "author": {
+          "username": "Artem Bondar",
+          "bio": null,
+          "image": "https://storage.googleapis.com/bondar-academy-visuals/Android.png",
+          "following": false
+      }
+  },
+    
+    {
+          "slug": "This-is-title-10014",
+          "title": "This is title 1",
+          "description": "This is description",
+          "body": "This is body",
+          "tagList": [],
+          "createdAt": "2024-10-06T01:39:35.836Z",
+          "updatedAt": "2024-10-06T01:39:35.836Z",
+          "favorited": false,
+          "favoritesCount": 100,
+          "author": {
+              "username": "queenofcypress",
+              "bio": null,
+              "image": "https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg",
+              "following": false
+          }
+      },
+      {
+          "slug": "Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1",
+          "title": "This is title 2",
+          "description": "Discover Bondar Academy's unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands – you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.",
+          "body": "Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it's a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we're here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com",
+          "tagList": [
+              "qa career",
+              "Bondar Academy",
+              "QA Skills",
+              "Value-Focused"
+          ],
+          "createdAt": "2024-01-27T21:52:32.682Z",
+          "updatedAt": "2024-01-27T21:52:32.682Z",
+          "favorited": false,
+          "favoritesCount": 11,
+          "author": {
+              "username": "Artem Bondar",
+              "bio": null,
+              "image": "https://storage.googleapis.com/bondar-academy-visuals/Android.png",
+              "following": false
+          }
+      }
+      
+  ],
+  "articlesCount": 11
+}

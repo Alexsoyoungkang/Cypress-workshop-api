@@ -1,11 +1,8 @@
 describe('Test with backend', () => {
 
   beforeEach('login to application', () => {
+    cy.intercept('GET', 'https://conduit-api.bondaracademy.com/api/tags', { fixture: 'tags.json'}) // stubbing the our own response(tags.json)
     cy.loginToApplication()
-  })
-
-  it('first', () => {
-    cy.log('we logged in')
   })
 
   it('Verify correct request and response', () => {
@@ -27,12 +24,38 @@ describe('Test with backend', () => {
       expect(xhr.response.body.article.body).to.equal('This is body')
 
     })
+  })
 
-    it.only('Verify popular tags are displayed', () => {
-      
+  it('Verify popular tags are displayed', () => {
+    cy.log('we logged in')
+    cy.get('.tag-list')
+      .should('contain', 'Cypress')
+      .and('contain', 'Automation')
+      .and('contain', 'testing')
+  })
+
+  it.only('Mocking API Response: verify favourite button', () => {
+    cy.intercept('GET', 'https://conduit-api.bondaracademy.com/api/articles*', { fixture: 'articles.json'}) //. 와일드카드(*)를 사용하여 쿼리 파라미터나 추가 경로가 있는 요청도 포함됩니다.
+
+
+    cy.get('a').contains('Global Feed').click()
+    cy.get('app-article-list button').then( favouriteList => {
+      expect(favouriteList[0]).to.contain('1')
+      expect(favouriteList[1]).to.contain('100')
     })
 
+    cy.fixture('articles').then( articleList => {
+      const articleSlug = articleList.articles[0].slug
+      //articleList.articles[0].favouritesCount = 2
+      //articleList.articles[1].favouritesCount = 101
+
+      cy.intercept('POST', `https://conduit-api.bondaracademy.com/api/articles/${articleSlug}/favorite`, articleList)
+    })
+
+    cy.get('app-article-list button').eq(0).click().should('contain', '2')
+    cy.get('app-article-list button').eq(1).click().should('contain', '101')
   })
+
 })
 
 // Stub vs. Spy
